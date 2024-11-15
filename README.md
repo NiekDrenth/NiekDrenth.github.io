@@ -1,5 +1,6 @@
 # NiekDrenth.github.io
 website
 
+Below is my solution to the November 2024 Jane Street puzzle
 
-[Linkje](Article.md)
+[Jane Street Nov 2024](Article.md)
