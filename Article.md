@@ -13,7 +13,13 @@ First, I observed that it is possible to generalize the problem by splitting the
 
 ![Besides the point](/images/plaatje 1.png)
 
-We can calculate the yellow area for the point (x,y) by calculating the area of the 2 quarter-circles, and subtracting the overlapping area twice. The radii for the left- and right circles are $$\sqrt{x^2 + y^2}$$ and $$\sqrt{(1-x)^2 + y^2}$$ respectively. The overlapping area is calculated by calculating the sector, where I use that the angle of the sector is given by $$\arctan{\frac{y}{x}}$$ and subtracting the triangle with base x and height y. For the right circle I do the same. Some algebra yields the following expression for the yellow area:
+We can calculate the yellow area for the point (x,y) by calculating the area of the 2 quarter-circles, and subtracting the overlapping area twice. The radii for the left- and right circles are $$\sqrt{x^2 + y^2}$$ and $$\sqrt{(1-x)^2 + y^2}$$ respectively. The overlapping area is calculated by calculating the sector, where I use that the angle of the sector is given by $$\arctan{\frac{y}{x}}$$ and subtracting the triangle with base x and height y. Visually, I first calculate the red area, and subtract the green area to obtain half of the overlapping area. The other area is calculated by repeating the process for the right circle, where we substitute $$x$$ for $$(1-x)$$.
+
+
+![Besides the point](/images/plaatje2.png)
+
+
+Some algebra yields the following expression for the yellow area:
 
 $$\frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}(x^2+y^2) - \arctan{\frac{y}{1-x}}((1-x)^2 + y^2) + y $$
 
