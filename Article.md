@@ -19,12 +19,23 @@ We can calculate the yellow area for the point (x,y) by calculating the area of 
 ![Besides the point](/images/plaatje2.png)
 
 
-Some algebra yields the following expression for the yellow area:
+Some algebra yields the following expression for the yellow area, where $$R_1$$ and $$R_2$$ are the squared radii $$(x^2 + y^2)$$ and $$((1-x)^2 + y^2)$$ of the left and right circle respectively:
 
 $$\frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}(x^2+y^2) - \arctan{\frac{y}{1-x}}((1-x)^2 + y^2) + y $$
 
-Now we can take the double integral over the red area from above and multiply it by 8 to obtain the final result (calculated using python)
+Now we can take the double integral over the red area from above. (calculated using python)
 
-$$ 8 * \int_0^{\frac{1}{2}} \int_0^x \frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}(x^2+y^2) - \arctan{\frac{y}{1-x}}((1-x)^2 + y^2) + y \,dy\,dx$$
+$$ \int_0^{\frac{1}{2}} \int_0^x \frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}(x^2+y^2) - \arctan{\frac{y}{1-x}}((1-x)^2 + y^2) + y \,dy\,dx$$
 
-This is approximate equal to $$\approx 0.49140757883$$ 
+Now we multiply it by 8 since we only calculated the probability for 1/8th of the square, this is approximately equal to $$\approx 0.49140757883$$ 
+
+## Bonus solution
+I wondered what would happen if we chose the side closest to either the blue or the red point. We still use the lower left triangle from the previous solution, adding that the point now has to be closer to the bottom side than the second point to any of the sides. Visually this can be obtained by drawing a square within the larger square with sides of $$1-2y$$. Now we need the part of the yellow area from the previous solution that is within this square. We calculate this red area, by taking the sector of the circle, using that the angle is given by $$ \frac{\pi}{4} - \arctan{\frac{y}{x}}  and removing the parts outside of the square by calculating the green area and the red area outside of the square combined, and then removing the green area.
+
+![Besides the point](/images/plaatje3.png)
+
+We do this for the right circle aswell and add the two yellow areas together, again we take the double integral resulting in the following equation, where $$R_1$$ and $$R_2$$ are the squared radii $$(x^2 + y^2)$$ and $$((1-x)^2 + y^2)$$ of the left and right circle respectively:
+
+$$ \int_0^{\frac{1}{2}} \int_0^x (\frac{\pi}{4} - \arctan{\frac{y}{x}})R_1 + (\frac{\pi}{4} - \arctan{\frac{y}{1-x}})R_2 - y + \frac{y^3}{x(1-x)} \,dy\,dx $$
+
+Calculating in python and multiplying by 8 yields approximately $$\approx 0.21103527329$$
