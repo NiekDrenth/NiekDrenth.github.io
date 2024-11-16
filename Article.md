@@ -25,6 +25,6 @@ $$\frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}(x^2+y^2) - \a
 
 Now we can take the double integral over the red area from above and multiply it by 8 to obtain the final result (calculated using python)
 
-$$ 8 * \int_0^{\frac{1}{2}} \int_0^x \frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}(x^2+y^2) - \arctan{\frac{y}{1-x}}((1-x)^2 + y^2) + y \,dy\,dx \approx 0.49140757883 $$
+$$ 8 * \int_0^{\frac{1}{2}} \int_0^x \frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}(x^2+y^2) - \arctan{\frac{y}{1-x}}((1-x)^2 + y^2) + y \,dy\,dx$$
 
-
+This is approximate equal to $$\approx 0.49140757883$$ 
