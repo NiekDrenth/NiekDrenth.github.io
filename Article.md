@@ -1,4 +1,8 @@
 {% include mathjax.html %}
+.MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 # Beside the point, Jane Street November 2024 puzzle.
 [Back to home page](README.md)
 
