@@ -24,7 +24,12 @@ We can calculate the yellow area for the point (x,y) by calculating the area of 
 
 
 Some algebra yields the following expression for the yellow area, where $$R_1$$ and $$R_2$$ are the squared radii $$(x^2 + y^2)$$ and $$((1-x)^2 + y^2)$$ of the left and right circle respectively:
-
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+         "HTML-CSS": { linebreaks: { automatic: true } },
+                 SVG: { linebreaks: { automatic: true } }
+        });
+        </script>
 $$\frac{1}{4} * \pi (x^2 + (1-x)^2 + 2y^2 ) - \arctan{\frac{y}{x}}R_1 - \arctan{\frac{y}{1-x}}R_2 + y $$
 
 Now we can take the double integral over the red area from above. (calculated using python)
