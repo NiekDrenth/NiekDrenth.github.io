@@ -6,4 +6,4 @@ Below is my solution to the November 2024 Jane Street puzzle
 
 Below are some articles:
 
-[A critical look on diversification](articles/diversification.md)
+[A critical look on diversification](/articles/diversification.md)
