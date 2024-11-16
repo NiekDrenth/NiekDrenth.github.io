@@ -13,7 +13,7 @@ First, I observed that it is possible to generalize the problem by splitting the
 
 ![Besides the point](/images/plaatje 1.png)
 
-We can calculate the yellow area for the point (x,y) by calculating the area of the 2 quarter-circles, and subtracting the overlapping area twice. The radii for the left- and right circles are $$\sqrt{x^2 + y^2}$$ and $$\sqrt{(1-x)^2 + y^2}$$ respectively. The overlapping area is calculated by calculating the sector, where I use that the angle of the sector is given by $$\arctan{\frac{x}{y}$$
+We can calculate the yellow area for the point (x,y) by calculating the area of the 2 quarter-circles, and subtracting the overlapping area twice. The radii for the left- and right circles are $$\sqrt{x^2 + y^2}$$ and $$\sqrt{(1-x)^2 + y^2}$$ respectively. The overlapping area is calculated by calculating the sector, where I use that the angle of the sector is given by $$\arctan{\frac{x}{y}}$$
 
 
 $$ x^2 $$
