@@ -43,4 +43,4 @@ We do this for the right circle aswell and add the two yellow areas together, ag
 
 $$ \int_0^{\frac{1}{2}} \int_0^x (\frac{\pi}{4} - \arctan{\frac{y}{x}})R_1 + (\frac{\pi}{4} - \arctan{\frac{y}{1-x}})R_2 - y + \frac{y^3}{x(1-x)} \,dy\,dx $$
 
-Calculating in python and multiplying by 8 yields approximately $$\approx 0.21103527329$$
+Calculating in python and multiplying by 8 yields approximately $$\approx 0.21103527329$$. This is considerably smaller due to the yellow area also getting smaller.
