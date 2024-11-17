@@ -1,4 +1,4 @@
-# NiekDrenth.github.io
+# Niek Drenth
 
 Below is my solution to the November 2024 Jane Street puzzle
 
