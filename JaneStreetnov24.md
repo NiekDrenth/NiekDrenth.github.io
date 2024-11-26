@@ -1,7 +1,10 @@
 {% include mathjax.html %}
+{% include JS_figure.html %}
+
 # Beside the point, Jane Street November 2024 puzzle.
 [Back to home page](README.md)
 
+![2](JS_figure.html)
 
 ![Besides the point](/images/november-2024.png)
 
