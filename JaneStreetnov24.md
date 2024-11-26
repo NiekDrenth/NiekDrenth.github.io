@@ -12,7 +12,7 @@ Two random points, one red and one blue, are chosen uniformly and independently 
 ## My solution
 
 First, I observed that it is possible to generalize the problem by splitting the square into 8 equal parts and only looking at the bottom left one, since we can always rotate or mirror the square such that a random point will always be in the bottom left part. Any point is this area is closes to the bottom side. I arbitrarily place a blue point at coordinates (x,y) in this area, and consider where the red point has to be placed for there to exist an equidistant point on the bottom side. This area is obtained by making 2 circles from the bottom-left and bottom-right corners crossing the point (x,y). The area contained in both circles does not result in there being an equidistant point. Resulting in only the yellow area yielding valid results. 
-
+This is shown graphically in the plot below, when you adjust the slider, a point on the bottom side of the square is selected, and all points that are equidistant to this point and the point (x,y) are shown by the line.
 {% include JS_figure.html %}
 
 
