@@ -36,7 +36,12 @@ Additionally, let $$x$$ and $$y$$ be the distance of the first throw.
                  SVG: { linebreaks: { automatic: true } }
         });
         </script>
-Probability of winning is: $$P(x>X)(P(y>Y)P(x>y|x>X, y>Y) + P(y<Y)P(x>y|x>X, y<Y)) + P(x<X)(P(y>Y)P(x>y|x<X, y>Y) + P(y<Y)P(x>y| x<X, y<Y))$$
-$$(1-X)(\frac{1}{2}(1-(1-X)) + \frac{1}{2}(1-\frac{1-X}{2})) + X(\frac{1}{2}(\frac{1}{4}) + \frac{1}{2}(\frac{1}{2}))$$
+
+
+The probability of winning is calculated by splitting it into 4 parts using the law of total probability:
+- Both keep their first or second throw.
+- We use first throw, opponent 2nd and vice versa.
+This results in the following expression:
+$$(1-X)((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})) + X((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2}))$$
 
 
