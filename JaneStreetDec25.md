@@ -31,6 +31,6 @@ My first intuition for this threshold was to use 1/2, since this maximizes the e
 Then I wanted to calculate the optimal response to this strategy, so we set Y to 1/2 and calculate X such that it results in the highest probability of winning. 
 
 Probability of winning:
-$$(1-X)((\frac{1}{2}(1-\frac{1-X}) + \frac{1}{2}(1-\frac{1-X}{2})) + X(\frac{1}{2}(\frac{1}{4}) + \frac{1}{2}(\frac{1}{2}$$
+$$(1-X)((\frac{1}{2}(1-(1-X)) + \frac{1}{2}(1-\frac{1-X}{2})) + X(\frac{1}{2}(\frac{1}{4}) + \frac{1}{2}(\frac{1}{2}$$
 
 
