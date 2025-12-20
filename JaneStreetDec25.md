@@ -23,8 +23,20 @@ From the puzzle description, we can make a clear plan on how to solve this puzzl
 
 ### Finding the Nash equilibrium
 
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+         "HTML-CSS": { linebreaks: { automatic: true } },
+                 SVG: { linebreaks: { automatic: true } }
+        });
+        </script>
+
 First, I started by trying to figure out a basic strategy. Recognizing that since we don't know anything about the throws of our opponent (before Spears Robot figured out the exploit), our decision to go for a second throw is solely based on the distance of our first throw. Furthermore, since all robots have equal skill, we cannot change our strategy depending on our opponent.
 This leads to a strategy where we set a certain threshold, if our first throw is below this threshold, we go for a second throw, otherwise we keep our first throw.
-Let's call this threshold 'X', our opponent uses the same logic to determine their strategy, let's call their threshold 'Y'.
+Let's call this threshold $$X$$, our opponent uses the same logic to determine their strategy, let's call their threshold $$Y$$.
+My first intuition for this threshold was to use 1/2, since this maximizes the expectation of the distance thrown. 
+Then I wanted to calculate the optimal response to this strategy, so we set Y to 1/2 and calculate X such that it results in the highest probability of winning. 
+
+Probability of winning:
+$$ (1-X)((\frac{1}{2}(1-\frac{1-X}) + \frac{1}{2}(1-\frac{1-X}{2}) + X(\frac{1}{2}(\frac{1}{4}) + \frac{1}{2}(\frac{1}{2} $$
 
 
