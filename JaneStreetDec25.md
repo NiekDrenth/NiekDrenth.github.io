@@ -86,7 +86,7 @@ The probability of winning is:
 $$\frac{3}{8}X + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right) + (1-\phi)\left(\frac{(1-T)^2}{2(1-\phi)} + \frac{T}{2} + \frac{\phi T}{2}\right)$$  
 </div>
 Derivative with respect to $$X$$:  
-$$\frac{3}{8} + \frac{1}{2}-\frac{3}{4}X=0$$  
+$$\frac{3}{8} + \frac{1}{2}-\frac{6}{4}X=0$$  
 We find optimal threshold $$X=7/12$$  
 This results in probability of winning of *0.4939370904*.
 
