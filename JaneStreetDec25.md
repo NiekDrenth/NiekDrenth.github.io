@@ -29,7 +29,6 @@ This leads to a strategy where we set a certain threshold, if our first throw is
 Let's call this threshold $$X$$, our opponent uses the same logic to determine their strategy, let's call their threshold $$Y$$.
 My first intuition for this threshold was to use 1/2, since this maximizes the expectation of the distance thrown. 
 Then I wanted to calculate the optimal response to this strategy, so we set Y to 1/2 and calculate X such that it results in the highest probability of winning. 
-Additionally, let $$x$$ and $$y$$ be the distance of the first throw. 
 <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
          "HTML-CSS": { linebreaks: { automatic: true } },
@@ -41,7 +40,17 @@ Additionally, let $$x$$ and $$y$$ be the distance of the first throw.
 The probability of winning is calculated by splitting it into 4 parts using the law of total probability:
 - Both keep their first or second throw.
 - We use first throw, opponent 2nd and vice versa.
+
+This results in the following expression, where we take $$Y$$ as given:
+$$P(x wins|Y) = (1-X)((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})) + X((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2}))$$
+To calculate the optimal threshold $$X$$ when we know $$Y$$, we calculate the derivative with respect to $$X$$ and set it equal to 0.
 This results in the following expression:
-$$(1-X)((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})) + X((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2}))$$
+
+$$X=\frac{(1-Y)^2 + 3Y}{2(Y+1)}$$
+For $$Y=0.5$$ the optimal response threshold is $$X = \frac{7}{12}$$.
+The Nash equilibrium is defined as the strategy for which no player can deviate to improve their probability of winning. 
+Recognizing this, we set $$X=Y$$, resulting in the following:
+$$0=X^2 + X - 1 \rightarrow X = \frac{-1+\sqrt{5}}{2} \approx 0.618$$ (only root in interval [0,1])
+We call this threshold $$\phi$$.
 
 
