@@ -42,15 +42,18 @@ The probability of winning is calculated by splitting it into 4 parts using the 
 - We use first throw, opponent 2nd and vice versa.
 
 This results in the following expression, where we take $$Y$$ as given:
-$$P(x wins|Y) = (1-X)((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})) + X((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2}))$$
+$$P(\text{x wins}|Y) = (1-X)((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})) + X((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2}))$$
 To calculate the optimal threshold $$X$$ when we know $$Y$$, we calculate the derivative with respect to $$X$$ and set it equal to 0.
-This results in the following expression:
-
-$$X=\frac{(1-Y)^2 + 3Y}{2(Y+1)}$$
-For $$Y=0.5$$ the optimal response threshold is $$X = \frac{7}{12}$$.
+This results in the following expression:  
+$$X=\frac{(1-Y)^2 + 3Y}{2(Y+1)}$$  
+For $$Y=0.5$$ the optimal response threshold is $$X = \frac{7}{12}$$.  
 The Nash equilibrium is defined as the strategy for which no player can deviate to improve their probability of winning. 
-Recognizing this, we set $$X=Y$$, resulting in the following:
-$$0=X^2 + X - 1 \rightarrow X = \frac{-1+\sqrt{5}}{2} \approx 0.618$$ (only root in interval [0,1])
+Recognizing this, we set $$X=Y$$, resulting in the following:  
+$$0=X^2 + X - 1 \rightarrow X = \frac{-1+\sqrt{5}}{2} \approx 0.618$$  
+which is the only root in the interval [0,1].
 We call this threshold $$\phi$$.
+
+### Spears Robot's strategy with the exploit
+
 
 
