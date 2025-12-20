@@ -64,7 +64,7 @@ Setting derivative equal to 0 yields:
 $$0=\frac{-1 + Y}{1-\phi} + \frac{1-\phi}{2} \rightarrow Y=\frac{1+\phi^2}{2} = T$$ 
 We call this threshold $$T$$  
 
-### Java-Lin strategy
+### Java-Lin's new strategy
 
 Spears Robot doesn't know that we know of their exploit and will play thinking our threshold is $$\phi$$.
 Since we don't know anything about the throws of Spears Robot, to amend our strategy we can only change our threshold $$X$$.  
