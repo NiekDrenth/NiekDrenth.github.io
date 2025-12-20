@@ -86,4 +86,8 @@ $$\frac{3}{8} + \frac{1}{2}-\left(\frac{3}{4}X=0$$
 We find optimal threshold $$X=7/12$$  
 This results in probability of winning of *0.4939370904*.
 
+### Some thoughts
+
+I found this to be an enjoyable puzzle. At first I found it difficult to intuitively understand why using a higher threshold than 0.5 could improve the chances of winning, since you lower the expected value of your distance thrown. However looking at it by considering values above 0.5 but below the new threshold phi, you can think about it this way: by keeping first throws of e.g. 0.51, you might make your expectation over 2 throws higher but when considering that you are playing an opponent with a similar strategy, the probability of winning with a distance of 0.51 is smaller than when you throw again.
+
 
