@@ -80,10 +80,10 @@ The above are split again depending on wether Spears Robot's first throw is abov
 This results in the probability of winning, for the last time we calculate $$X$$ by setting derivative with respect to $$X$$ equal to zero.
 We plug the value for $$X$$ into the probability of winning.  
 The probability of winning is:  
-$$\frac{3}{8}X + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right) + (1-\phi)\left(\frac{(1-T)^2}{2(1-\phi)} + \frac{T}{2} + \frac{\phi T}{2}\right)$$
+$$\frac{3}{8}X + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right) + (1-\phi)\left(\frac{(1-T)^2}{2(1-\phi)} + \frac{T}{2} + \frac{\phi T}{2}\right)$$  
 Derivative with respect to $$X$$:  
-$$\frac{3}{8} + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right)$$
-We find optimal threshold $$X=7/12$$
+$$\frac{3}{8} + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right)$$  
+We find optimal threshold $$X=7/12$$  
 This results in probability of winning of *0.4939370904*.
 
 
