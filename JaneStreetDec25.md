@@ -42,7 +42,7 @@ The probability of winning is calculated by splitting it into 4 parts using the 
 - We use first throw, opponent 2nd and vice versa.
 
 This results in the following expression, where we take $$Y$$ as given:
-$$P(\text{x wins}|Y) = (1-X)((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})) + X((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2}))$$  
+$$P(\text{x wins}|Y) = (1-X)\left((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})\right) + X\left((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2})\right)$$  
 To calculate the optimal threshold $$X$$ when we know $$Y$$, we calculate the derivative with respect to $$X$$ and set it equal to 0.
 This results in the following expression:  
 $$X=\frac{(1-Y)^2 + 3Y}{2(Y+1)}$$  
@@ -82,7 +82,7 @@ We plug the value for $$X$$ into the probability of winning.
 The probability of winning is:  
 $$\frac{3}{8}X + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right) + (1-\phi)\left(\frac{(1-T)^2}{2(1-\phi)} + \frac{T}{2} + \frac{\phi T}{2}\right)$$  
 Derivative with respect to $$X$$:  
-$$\frac{3}{8} + \frac{1}{2}-\left(\frac{3}{4}X=0 \right$$  
+$$\frac{3}{8} + \frac{1}{2}-\frac{3}{4}X=0$$  
 We find optimal threshold $$X=7/12$$  
 This results in probability of winning of *0.4939370904*.
 
