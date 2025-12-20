@@ -42,7 +42,9 @@ The probability of winning is calculated by splitting it into 4 parts using the 
 - We use first throw, opponent 2nd and vice versa.
 
 This results in the following expression, where we take $$Y$$ as given:
-$$P(\text{x wins}|Y) = (1-X)\left((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})\right) + X\left((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2})\right)$$  
+<div style="overflow-x: auto;">
+$$P(\text{x wins}|Y) = (1-X)\left((1-Y)(1-\frac{1-X}{2(1-Y)} + Y(1-\frac{1-X}{2})\right) + X\left((1-Y)(\frac{1-Y}{2}) + Y(\frac{1}{2})\right)$$
+</div>
 To calculate the optimal threshold $$X$$ when we know $$Y$$, we calculate the derivative with respect to $$X$$ and set it equal to 0.
 This results in the following expression:  
 $$X=\frac{(1-Y)^2 + 3Y}{2(Y+1)}$$  
