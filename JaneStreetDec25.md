@@ -74,7 +74,7 @@ Simulations in Python show that this new threshold should lower than $$\phi$$ an
 
 Again we use the law of total probability to split up into multiple parts:
 - first throw below $$X$$. $$Y = \frac{1}{2}$$
-- first throw between $$X$$ and $$\phi$$. $$Y=\frac{1}{2}
+- first throw between $$X$$ and $$\phi$$. $$Y=\frac{1}{2}$$
 - first throw above $$\phi$$. $$Y=T$$.
 
 The above are split again depending on wether Spears Robot's first throw is above or below $$Y$$.  
