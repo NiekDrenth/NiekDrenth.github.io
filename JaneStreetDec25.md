@@ -55,6 +55,35 @@ We call this threshold $$\phi$$.
 
 ### Spears Robot's strategy with exploit
 
+Spears Robot thinks we use threshold $$\phi$$, and will choose $$d=\phi$$. 
+Case 1: our first throw is below $$\phi$$, they will choose to use threshold $$Y=0.5$$ since this maximizes chance to win when we throw again.
+Case 2: our first throw above $$\phi$$, this is slightly more involved. Spears Robot thinks we keep our first throw, which is distributed 
+uniformly over [phi,1]. We again calculate the expression for probability of winning, and derive with respect to $$Y$$:  
+$$P(\text{y win}) = \frac{(1-Y)^2}{2(1-\phi)} + \frac{Y(1-\phi)}{2}$$  
+Setting derivative equal to 0 yields:  
+$$0=\frac{-1 + Y}{1-\phi} + \frac{1-\phi}{2} \rightarrow Y=\frac{1+\phi^2}{2} = T$$ 
+We call this threshold $$T$$  
 
+### Java-Lin strategy
+
+Spears Robot doesn't know that we know of their exploit and will play thinking our threshold is $$\phi$$.
+Since we don't know anything about the throws of Spears Robot, to amend our strategy we can only change our threshold $$X$$.  
+Simulations in Python show that this new threshold should lower than $$\phi$$ and we will continue with this assumption.
+
+Again we use the law of total probability to split up into multiple parts:
+- first throw below $$X$$. $$Y = \frac{1}{2}$$
+- first throw between $$X$$ and $$\phi$$. $$Y=\frac{1}{2}
+- first throw above $$\phi$$. $$Y=T$$.
+
+The above are split again depending on wether Spears Robot's first throw is above or below $$Y$$.  
+
+This results in the probability of winning, for the last time we calculate $$X$$ by setting derivative with respect to $$X$$ equal to zero.
+We plug the value for $$X$$ into the probability of winning.  
+The probability of winning is:  
+$$\frac{3}{8}X + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right) + (1-\phi)\left(\frac{(1-T)^2}{2(1-\phi)} + \frac{T}{2} + \frac{\phi T}{2}\right)$$
+Derivative with respect to $$X$$:  
+$$\frac{3}{8} + (\phi - X)\left(\frac{3}{4}\phi + \frac{3}{4}X - \frac{1}{2}\right)$$
+We find optimal threshold $$X=7/12$$
+This results in probability of winning of *0.4939370904*.
 
 
