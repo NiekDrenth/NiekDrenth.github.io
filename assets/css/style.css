@@ -444,25 +444,58 @@ main { padding-top: 6rem; }
 .btn-submit:hover .arr { transform: translateX(.3rem); }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━
+   Background sections
+━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Dot-grid — hero background */
+.bg-dot {
+  background-color: var(--bg);
+  background-image: radial-gradient(circle, rgba(80,75,68,.2) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+
+/* Deep navy — aanpak strip and inner page headers */
+.bg-navy {
+  background: #15304B;
+  color: #E2DFDA;
+}
+.bg-navy .label { color: #73B2D8; }
+.bg-navy .strip { border-top: none; }
+.bg-navy .strip-content h2 { color: #E2DFDA; }
+.bg-navy .strip-content p { color: #8CB5CE; }
+.bg-navy .arrow-link { color: #E2DFDA; }
+.bg-navy .page-header {
+  padding-top: 3.5rem;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  margin-bottom: 0;
+}
+.bg-navy .page-header h1 { color: #E2DFDA; }
+
+/* Spacing for content that follows a dark page header section */
+.content-body { padding-top: 5rem; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━
    Footer
 ━━━━━━━━━━━━━━━━━━━━━━━━ */
 footer {
-  border-top: 1px solid var(--border);
   padding: 2.5rem var(--pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
+  background: #0F2538;
+  border-top: 1px solid rgba(255,255,255,.07);
 }
 .footer-logo {
   font-family: var(--serif);
   font-size: 1rem;
   font-weight: 500;
+  color: #E2DFDA;
 }
 .footer-copy {
   font-size: .7rem;
-  color: var(--muted);
+  color: #4E7A97;
   letter-spacing: .04em;
 }
 .footer-nav { display: flex; gap: 2rem; list-style: none; }
@@ -470,10 +503,10 @@ footer {
   font-size: .65rem;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #4E7A97;
   transition: color .25s;
 }
-.footer-nav a:hover { color: var(--ink); }
+.footer-nav a:hover { color: #E2DFDA; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━
    Responsive

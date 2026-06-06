@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- PLAATSHOUDER: Vervang [Bedrijfsnaam] door uw bedrijfsnaam -->
   <title>Contact — Frap Consultants</title>
   <meta name="description" content="Neem contact op met Frap Consultants voor een vrijblijvend gesprek over de mogelijkheden voor uw bedrijf m.b.t. AI.">
-
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -24,45 +21,44 @@
   </nav>
 
   <main>
-    <div class="container">
 
-      <!-- ─── Page header ─── -->
-      <header class="page-header">
-        <p class="label">Contact</p>
-        <!-- ════════════════════════════════════════════
-             PLAATSHOUDER – Hoofdtitel van de contactpagina.
-        ════════════════════════════════════════════ -->
-        <h1>Laten we<br>kennis maken.</h1>
-      </header>
+    <!-- ─── Page header — dark navy ─── -->
+    <section class="bg-navy">
+      <div class="container">
+        <header class="page-header">
+          <p class="label">Contact</p>
+          <h1>Laten we<br>kennis maken.</h1>
+        </header>
+      </div>
+    </section>
 
-      <!-- ─── Contact layout ─── -->
+    <!-- ─── Content — light ─── -->
+    <div class="container content-body">
+
       <section class="contact-layout">
 
         <!-- ─── Left: info ─── -->
         <div class="contact-aside">
-          <!-- ════ PLAATSHOUDER: Inleidende tekst bij het contactformulier ════ -->
           <h2>Neem nu contact op</h2>
-          <p>Wij beginnen altijd met een vrijblijvend intake gesprek om te kijken hoe wij u kunnen helpen.</p>
+          <p>Wij beginnen altijd met een vrijblijvend intakegesprek om te kijken hoe wij u kunnen helpen.</p>
 
-          <!-- ════ PLAATSHOUDER: Contactgegevens ════ -->
           <ul class="contact-details">
             <li>
               <p class="detail-label">E-mail</p>
-              <!-- Vervang door uw e-mailadres -->
               <p class="detail-value">
                 <a href="mailto:info@frapconsultants.nl">info@frapconsultants.nl</a>
               </p>
             </li>
             <li>
               <p class="detail-label">Telefoon</p>
-              <!-- Vervang door uw telefoonnummer -->
               <p class="detail-value">
+                <!-- PLAATSHOUDER: Vervang door uw telefoonnummer -->
                 <a href="tel:+310000000000">+31 (0)00 000 0000</a>
               </p>
             </li>
             <li>
               <p class="detail-label">Adres</p>
-              <!-- Vervang door uw adres -->
+              <!-- PLAATSHOUDER: Vervang door uw adres -->
               <p class="detail-value">
                 [Straatnaam 00]<br>
                 [0000 AB Stad], Nederland
@@ -70,7 +66,7 @@
             </li>
             <li>
               <p class="detail-label">KVK-nummer</p>
-              <!-- Vervang door uw KVK-nummer -->
+              <!-- PLAATSHOUDER: Vervang door uw KVK-nummer -->
               <p class="detail-value">[00000000]</p>
             </li>
           </ul>
@@ -78,13 +74,8 @@
 
         <!-- ─── Right: form ─── -->
         <div class="contact-form">
-          <!-- ════════════════════════════════════════════
-               Dit formulier verstuurt nog geen e-mails —
-               koppel het aan een dienst zoals Formspree,
-               Netlify Forms, of uw eigen backend.
-               Vervang de action-URL hieronder:
-               <form action="https://formspree.io/f/[uw-id]" method="POST">
-          ════════════════════════════════════════════ -->
+          <!-- Koppel aan Formspree of eigen backend:
+               <form action="https://formspree.io/f/[uw-id]" method="POST"> -->
           <form action="#" method="POST" novalidate>
 
             <div class="form-row">
@@ -110,11 +101,10 @@
 
             <div class="form-group">
               <label for="onderwerp">Onderwerp</label>
-              <!-- ════ PLAATSHOUDER: Pas de opties aan op uw diensten ════ -->
               <select id="onderwerp" name="onderwerp">
                 <option value="" disabled selected>Kies een onderwerp</option>
-                <option value="strategie">Retrieval Augmented Generation (RAG)</option>
-                <option value="ml">Lokale AI-oplossingen</option>
+                <option value="rag">Retrieval Augmented Generation (RAG)</option>
+                <option value="privacy">Lokale AI-oplossingen</option>
                 <option value="training">Training &amp; Workshops</option>
                 <option value="overig">Overig</option>
               </select>
@@ -135,6 +125,7 @@
       </section>
 
     </div><!-- /container -->
+
   </main>
 
   <!-- ─── Footer ─── -->
