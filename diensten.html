@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLAATSHOUDER: Vervang [Bedrijfsnaam] door uw bedrijfsnaam -->
+  <title>Onze Diensten — [Bedrijfsnaam]</title>
+  <meta name="description" content="[Beschrijving van uw diensten, max 160 tekens]">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">[Bedrijfsnaam]</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="diensten.html" class="active">Diensten</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- ─── Page header ─── -->
+      <header class="page-header">
+        <p class="label">Onze diensten</p>
+        <!-- ════════════════════════════════════════════
+             PLAATSHOUDER – Hoofdtitel van deze pagina.
+             Een korte, wervende samenvatting van uw aanbod.
+        ════════════════════════════════════════════ -->
+        <h1>Wat wij<br><em>voor u</em><br>kunnen doen.</h1>
+      </header>
+
+      <!-- ─── Services list ─── -->
+      <section class="services-list">
+
+        <!-- ═══ DIENST 1 ═══════════════════════════════
+             PLAATSHOUDER – Dienst 1
+             Pas de naam, beschrijving en het label aan.
+        ═══════════════════════════════════════════ -->
+        <article class="service-item">
+          <span class="service-num">01</span>
+          <div class="service-body">
+            <h2 class="service-name">AI Strategie &amp; Roadmapping</h2>
+            <p class="service-desc">
+              [Beschrijf hier dienst 1 in twee tot vier zinnen. Wat houdt het in, welk probleem lost het op, en wat levert het de klant op? Wees concreet en vermijd jargon.]
+            </p>
+          </div>
+          <!-- PLAATSHOUDER: Korte categorie-aanduiding (1-2 woorden) -->
+          <span class="service-pill">Strategie</span>
+        </article>
+
+        <!-- ═══ DIENST 2 ═══════════════════════════════ -->
+        <article class="service-item">
+          <span class="service-num">02</span>
+          <div class="service-body">
+            <h2 class="service-name">Data &amp; Machine Learning</h2>
+            <p class="service-desc">
+              [Beschrijf hier dienst 2. Welke technologie of methodiek zet u in? Wat zijn typische vraagstukken die u oplost? Wat maakt uw aanpak onderscheidend?]
+            </p>
+          </div>
+          <span class="service-pill">Data</span>
+        </article>
+
+        <!-- ═══ DIENST 3 ═══════════════════════════════ -->
+        <article class="service-item">
+          <span class="service-num">03</span>
+          <div class="service-body">
+            <h2 class="service-name">AI Implementatie</h2>
+            <p class="service-desc">
+              [Beschrijf hier dienst 3. Gaat het om technische integratie, change management, of een combinatie? Hoe ziet het traject eruit en wat zijn de deliverables?]
+            </p>
+          </div>
+          <span class="service-pill">Implementatie</span>
+        </article>
+
+        <!-- ═══ DIENST 4 ═══════════════════════════════ -->
+        <article class="service-item">
+          <span class="service-num">04</span>
+          <div class="service-body">
+            <h2 class="service-name">Training &amp; Workshops</h2>
+            <p class="service-desc">
+              [Beschrijf hier dienst 4. Wie zijn de deelnemers (management, developers, eindgebruikers)? Wat leren ze? In welke vorm worden de trainingen aangeboden?]
+            </p>
+          </div>
+          <span class="service-pill">Training</span>
+        </article>
+
+        <!-- ─────────────────────────────────────────────
+             Voeg eventueel meer diensten toe door het
+             bovenstaande <article>-blok te kopiëren
+             en het nummer op te hogen naar 05, 06, …
+        ───────────────────────────────────────────── -->
+
+      </section>
+
+      <!-- ─── CTA strip ─── -->
+      <section class="strip" style="border-bottom: 1px solid var(--border);">
+        <div class="strip-label">
+          <span class="label">Neem contact op</span>
+        </div>
+        <div class="strip-content">
+          <!-- ════ PLAATSHOUDER: Afsluitende call-to-action tekst ════ -->
+          <h2>[Een uitnodigende slotzin die de lezer aanzet om contact op te nemen.]</h2>
+          <p>[Optionele toelichting: wat gebeurt er nadat iemand contact opneemt? Verwacht hen een vrijblijvend gesprek, een intake, een offerte?]</p>
+          <a href="contact.html" class="arrow-link">
+            Neem contact op <span class="arr">→</span>
+          </a>
+        </div>
+      </section>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer>
+    <span class="footer-logo">[Bedrijfsnaam]</span>
+    <span class="footer-copy">&copy; 2025 [Bedrijfsnaam]. Alle rechten voorbehouden.</span>
+    <ul class="footer-nav">
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
