@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;500&display=swap');
 
 /* ─── Design tokens ─── */
 :root {
-  --bg:       #F5F2EC;
-  --ink:      #1A1916;
-  --muted:    #8A8680;
-  --accent:   #C2895A;
-  --border:   #E3DDD5;
-  --serif:    'Cormorant Garamond', Georgia, serif;
-  --sans:     'DM Sans', system-ui, sans-serif;
-  --max:      1240px;
-  --pad:      clamp(1.5rem, 5vw, 5rem);
+  --bg:          #E8E6E1;
+  --ink:         #181816;
+  --muted:       #545250;
+  --accent:      #1B4F78;
+  --accent-warm: #8B6420;
+  --border:      #BEBAB2;
+  --serif:       'Libre Baskerville', Georgia, serif;
+  --sans:        'Inter', system-ui, sans-serif;
+  --max:         1240px;
+  --pad:         clamp(1.5rem, 5vw, 5rem);
 }
 
 /* ─── Reset ─── */
@@ -20,7 +21,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--sans);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
@@ -137,14 +138,10 @@ main { padding-top: 6rem; }
 }
 .hero-right h1 {
   font-family: var(--serif);
-  font-size: clamp(3.6rem, 6.5vw, 7rem);
-  font-weight: 300;
-  line-height: 1.04;
-  letter-spacing: -.02em;
-}
-.hero-right h1 em {
-  font-style: italic;
-  font-weight: 300;
+  font-size: clamp(2.8rem, 5vw, 5.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -.01em;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -161,9 +158,9 @@ main { padding-top: 6rem; }
 .strip-label { padding-top: .4rem; }
 .strip-content h2 {
   font-family: var(--serif);
-  font-size: clamp(2rem, 3.2vw, 3rem);
-  font-weight: 400;
-  line-height: 1.15;
+  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 .strip-content p {
@@ -185,8 +182,8 @@ main { padding-top: 6rem; }
 }
 .services-teaser-header h2 {
   font-family: var(--serif);
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  font-weight: 400;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 700;
 }
 
 .teaser-list { list-style: none; }
@@ -205,13 +202,13 @@ main { padding-top: 6rem; }
 
 .teaser-name {
   font-family: var(--serif);
-  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
-  font-weight: 400;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  font-weight: 700;
 }
 .teaser-num {
   font-size: .68rem;
   letter-spacing: .12em;
-  color: var(--muted);
+  color: var(--accent-warm);
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -225,13 +222,12 @@ main { padding-top: 6rem; }
 .page-header .label { margin-bottom: 1.75rem; }
 .page-header h1 {
   font-family: var(--serif);
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  font-weight: 300;
-  line-height: 1.06;
-  letter-spacing: -.015em;
-  max-width: 16ch;
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  max-width: 20ch;
 }
-.page-header h1 em { font-style: italic; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━
    DIENSTEN
@@ -250,16 +246,17 @@ main { padding-top: 6rem; }
 .service-item:hover { padding-left: .9rem; }
 
 .service-num {
-  font-family: var(--serif);
-  font-size: .95rem;
-  color: var(--accent);
-  padding-top: .3rem;
+  font-family: var(--sans);
+  font-size: .72rem;
+  letter-spacing: .1em;
+  color: var(--accent-warm);
+  padding-top: .4rem;
 }
 .service-body {}
 .service-name {
   font-family: var(--serif);
-  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
-  font-weight: 400;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: .9rem;
 }
@@ -325,9 +322,9 @@ main { padding-top: 6rem; }
 .team-info { padding-top: .5rem; }
 .team-name {
   font-family: var(--serif);
-  font-size: clamp(2.2rem, 3.8vw, 3.5rem);
-  font-weight: 300;
-  line-height: 1.08;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.1;
   letter-spacing: -.01em;
   margin-bottom: .5rem;
 }
@@ -357,8 +354,8 @@ main { padding-top: 6rem; }
 }
 .contact-aside h2 {
   font-family: var(--serif);
-  font-size: clamp(1.8rem, 2.8vw, 2.5rem);
-  font-weight: 400;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
@@ -411,7 +408,7 @@ main { padding-top: 6rem; }
   border-bottom: 1px solid var(--border);
   padding: .55rem 0;
   font-family: var(--sans);
-  font-weight: 300;
+  font-weight: 400;
   font-size: .95rem;
   color: var(--ink);
   outline: none;
