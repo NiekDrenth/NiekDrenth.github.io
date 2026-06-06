@@ -32,21 +32,24 @@ a { color: inherit; text-decoration: none; }
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 2rem var(--pad);
+  padding: 1rem var(--pad);
   background: var(--bg);
   transition: padding .4s ease, border-color .4s ease;
   border-bottom: 1px solid transparent;
 }
 nav.scrolled {
-  padding: 1.25rem var(--pad);
+  padding: .75rem var(--pad);
   border-color: var(--border);
 }
 
 .nav-logo {
-  font-family: var(--serif);
-  font-size: 1.15rem;
-  font-weight: 500;
-  letter-spacing: .025em;
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  height: 80px;
+  width: auto;
+  display: block;
 }
 
 .nav-links { display: flex; gap: 2.75rem; list-style: none; }
@@ -72,7 +75,7 @@ nav.scrolled {
 .nav-links a.active::after { width: 100%; }
 
 /* ─── Page shell ─── */
-main { padding-top: 6rem; }
+main { padding-top: 6.5rem; }
 .container {
   max-width: var(--max);
   margin: 0 auto;
